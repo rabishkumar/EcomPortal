@@ -10,8 +10,8 @@
     "web-vitals": "^4.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "npx webpack --mode development",
+  "start": "npx webpack serve --mode development",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -32,5 +32,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "webpack-cli": "^6.0.1"
   }
 }
